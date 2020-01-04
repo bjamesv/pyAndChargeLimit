@@ -1,3 +1,7 @@
+# Simple module to call REST API when Android device charges to target battery %
+#
+# Copyright (C) 2020 Brandon J. Van Vaerenbergh
+
 from time import sleep
 import logging
 
