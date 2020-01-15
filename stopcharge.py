@@ -14,9 +14,10 @@ sonoff_ip = 'PUT_SWITCH_IP_HERE' #or, lookup via mDNS
 wait_delay = 15 #seconds
 
 stop_url = 'http://{}:8081/zeroconf/switch'.format(sonoff_ip)
+logging.basicConfig(level=logging.DEBUG)
 logger = logging.getLogger(__name__)
 def stop_charge():
-    print('Turning smart switch: off')
+    logger.info('Turning smart switch: off')
     try:
         requests.post(stop_url,json={"deviceId": sonoff_device_id,"data":{"switch":"off"}})
     except requests.exceptions.ConnectionError:
