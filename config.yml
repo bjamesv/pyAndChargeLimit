@@ -1,0 +1,5 @@
+charge_limit: 80 #percent
+sonoff:
+  device_id: PUT_ID_HERE #deviceId of the switch charger is plugged into
+  ip: PUT_SWITCH_IP_HERE #lookup via mDNS
+wait_delay: 15 #seconds

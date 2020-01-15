@@ -13,15 +13,16 @@ Example:
 
 # Setup
 
-* Install [QPython](https://github.com/qpython-android/qpython/releases/latest), tap `QPYPI` > `QPYPI CLIENT`, run `pip install requests`
+* Install [QPython](https://github.com/qpython-android/qpython/releases/latest), tap `QPYPI` > `QPYPI CLIENT`, run `pip install requests PyYAML watchdog`
 * Copy [stopcharge.py](stopcharge.py) to QPython `scripts/` directory
+* Copy [config.yml](stopcharge.py) to QPython `scripts/` directory
 
 _Setting up the hardware smart switch to connect to the Android device's Wifi hotspot or wifi network is beyond the scope of this README. (See: [Protocol Doc](https://github.com/itead/Sonoff_Devices_DIY_Tools/blob/5a49d77/SONOFF%20DIY%20MODE%20Protocol%20Doc%20v1.4.md) for Sonoff DIY Mode, etc.)_
 
 # Usage
 To run pyAndChargeLimit
 
-* open QPython, tap `Explorer` > `scripts/` > `stopcharge.py`
+* open QPython, tap `Explorer` > `scripts/` > `config.yml`
 * Enter the Sonoff deviceId & IP address of the smart outlet your charger is plugged into, and tap 💾 icon
 * Tap the ▶️ icon, tap ⬅️ icon near top of terminal screen (see Example above), tap `YES` at the prompt for `Run on background`
 
